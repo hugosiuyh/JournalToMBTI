@@ -34,7 +34,7 @@ pipenv shell
 pipenv install
 ```
 4. Run the server with `python manage.py runserver`.
-``{bash}
+```{bash}
 python manage.py runserver
 ```
 5. Alternatively, visit the website to access the project online.
