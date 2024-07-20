@@ -132,7 +132,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://333295207857-my-bucket.s3-website-us-west-1.amazonaws.com/"
+    "http://333295207857-my-bucket.s3-website-us-west-1.amazonaws.com"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
