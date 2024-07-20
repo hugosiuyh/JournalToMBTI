@@ -27,15 +27,12 @@ SECRET_KEY = "django-insecure-s)9w1m_5-ej(whsa@#b)!espf)xuij_xso(@^i_l3^b)qr(_cs
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "http://localhost:3000/", 
-    "127.0.0.1:8000",
-    "127.0.0.1", 
-    "http://333295207857-my-bucket.s3-website-us-west-1.amazonaws.com", 
-    "http://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/",
+    "localhost",
+    "127.0.0.1",
+    "333295207857-my-bucket.s3-website-us-west-1.amazonaws.com",
+    "ec2-18-144-8-104.us-west-1.compute.amazonaws.com",
     "18.144.8.104"
-    
 ]
-
 
 # Application definition
 
