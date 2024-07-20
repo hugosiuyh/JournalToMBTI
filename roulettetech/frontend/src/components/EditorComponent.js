@@ -40,7 +40,7 @@ const EditorComponent = () => {
 
   const handleAnalyzeSubmit = () => {
     console.log('Submitting blocks for analysis:', blocksRef.current);
-    axios.post('http://127.0.0.1:8000/api/analyze/', 
+    axios.post('https://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/api/analyze/', 
       { 
         blocks: blocksRef.current,
       }, 
@@ -73,7 +73,7 @@ const EditorComponent = () => {
     if (!mbtiType) return;
 
     console.log('Submitting MBTI type for friends:', mbtiType);
-    axios.post('http://127.0.0.1:8000/api/friends/', 
+    axios.post('https://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/api/friends/', 
       { 
         mbti_type: mbtiType,
       }, 

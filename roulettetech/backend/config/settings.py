@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +29,11 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "http://localhost:3000/", 
     "127.0.0.1:8000",
-    "127.0.0.1"
+    "127.0.0.1", 
+    "http://333295207857-my-bucket.s3-website-us-west-1.amazonaws.com", 
+    "http://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/",
+    "18.144.8.104"
+    
 ]
 
 
@@ -77,18 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -136,3 +129,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+#static url
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
