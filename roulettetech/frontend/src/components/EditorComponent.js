@@ -6,6 +6,7 @@ import { BlockNoteView, Theme } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
 import './EditorComponent.css'; // Import the CSS file for styling
 import AnalyzeModal from './AnalyzeModal';
+import API_BASE_URL from '../config';
 
 const EditorComponent = () => {
   const [blocks, setBlocks] = useState([]);
@@ -15,7 +16,7 @@ const EditorComponent = () => {
   const [mbtiType, setMbtiType] = useState(null);
   const [showAnalyzeModal, setShowAnalyzeModal] = useState(false);
   const [showFriendsModal, setShowFriendsModal] = useState(false);
-  const [showFriendsButton, setShowFriendsButton] = useState(false)
+  const [showFriendsButton, setShowFriendsButton] = useState(false);
 
   const editorOptions = { uploadFile: () => {} };
   const editor = useCreateBlockNote(editorOptions);
@@ -40,7 +41,7 @@ const EditorComponent = () => {
 
   const handleAnalyzeSubmit = () => {
     console.log('Submitting blocks for analysis:', blocksRef.current);
-    axios.post('http://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/api/analyze/', 
+    axios.post(`${API_BASE_URL}/api/analyze/`, 
       { 
         blocks: blocksRef.current,
       }, 
@@ -52,7 +53,9 @@ const EditorComponent = () => {
     )
     .then(response => {
       console.log('Successfully analyzed:', response);
+      
       const match = response.data.personality_type.match(/Personality Type: (\w+)/);
+
       if (match && match[1]) {
         const personalityType = match[1];
         setAnalyzeResult(response.data.personality_type);
@@ -73,7 +76,7 @@ const EditorComponent = () => {
     if (!mbtiType) return;
 
     console.log('Submitting MBTI type for friends:', mbtiType);
-    axios.post('http://ec2-18-144-8-104.us-west-1.compute.amazonaws.com/api/friends/', 
+    axios.post(`${API_BASE_URL}/api/friends/`, 
       { 
         mbti_type: mbtiType,
       }, 
@@ -93,85 +96,20 @@ const EditorComponent = () => {
     });
   };
 
-  const lightWithBlack = {
-    colors: {
-      editor: {
-        text: "#000000",
-        background: "#FFFFFF",
-      },
-      menu: {
-        text: "#3f3f3f",
-        background: "#ffffff",
-      },
-      tooltip: {
-        text: "#3f3f3f",
-        background: "#efefef",
-      },
-      hovered: {
-        text: "#3f3f3f",
-        background: "#efefef",
-      },
-      selected: {
-        text: "#ffffff",
-        background: "#3f3f3f",
-      },
-      disabled: {
-        text: "#afafaf",
-        background: "#efefef",
-      },
-      shadow: "#cfcfcf",
-      border: "#efefef",
-      sideMenu: "#cfcfcf",
-      highlights: {
-        gray: {
-          text: "#9b9a97",
-          background: "#ebeced",
-        },
-        brown: {
-          text: "#64473a",
-          background: "#e9e5e3",
-        },
-        red: {
-          text: "#e03e3e",
-          background: "#fbe4e4",
-        },
-        orange: {
-          text: "#d9730d",
-          background: "#f6e9d9",
-        },
-        yellow: {
-          text: "#dfab01",
-          background: "#fbf3db",
-        },
-        green: {
-          text: "#4d6461",
-          background: "#ddedea",
-        },
-        blue: {
-          text: "#0b6e99",
-          background: "#ddebf1",
-        },
-        purple: {
-          text: "#6940a5",
-          background: "#eae4f2",
-        },
-        pink: {
-          text: "#ad1a72",
-          background: "#f4dfeb",
-        },
-      },
-      fontFamily: "Roboto",
-    },
-  };
-
   return (
     <>
       <div className="editor-container">
-        <BlockNoteView editor={editor} theme={lightWithBlack} onChange={handleEditorChange} />
+        <BlockNoteView editor={editor} onChange={handleEditorChange} />
       </div>
       <div>
-        <button onClick={handleAnalyzeSubmit}>Analyze</button>
-        {showFriendsButton && mbtiType && <button onClick={handleFriendsSubmit}>Show potential friends</button>}
+        <button className="button" onClick={handleAnalyzeSubmit}>
+          Analyze
+        </button>
+        {showFriendsButton && mbtiType && (
+          <button className="button" onClick={handleFriendsSubmit}>
+            Show potential friends
+          </button>
+        )}
       </div>
 
       <AnalyzeModal 

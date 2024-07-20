@@ -5,8 +5,10 @@ const AnalyzeModal = ({ show, result, onClose }) => {
   if (!show) return null;
 
   const createMarkup = (text) => {
-    const formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    return { __html: formattedText };
+
+    const boldText = text.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+
+    return { __html: boldText.replace(/\n/g, '<br/>') };
   };
 
   return (
