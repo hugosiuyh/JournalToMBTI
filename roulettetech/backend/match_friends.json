@@ -1,0 +1,116 @@
+{
+    "compatibility": {
+        "INFP": {
+            "Ideal": ["INFP", "INFJ", "ISFP", "ISTP"],
+            "Good": ["ENFP"],
+            "Alright": ["ENFJ"],
+            "Not Ideal": ["INTJ", "INTP", "ISFJ"],
+            "Uh-Oh, Think This One Through": ["ENTJ", "ESFP", "ESTP", "ESFJ", "ISTJ", "ESTJ"]
+        },
+        "ENFP": {
+            "Ideal": ["ENFP", "INFJ", "INTJ", "ENTP", "ESFP", "ESFJ"],
+            "Good": ["INFP", "ENFJ"],
+            "Alright": [],
+            "Not Ideal": ["ENTJ", "INTP", "ISFP", "ESTP", "ISFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["ISTP", "ISTJ"]
+        },
+        "INFJ": {
+            "Ideal": ["INFP", "ENFP", "INFJ", "ENTP"],
+            "Good": ["ENFJ"],
+            "Alright": ["INTJ"],
+            "Not Ideal": ["ENTJ", "INTP", "ISFP", "ISTP", "ISFJ"],
+            "Uh-Oh, Think This One Through": ["ESFP", "ESTP", "ESFJ", "ISTJ", "ESTJ"]
+        },
+        "ENFJ": {
+            "Ideal": ["ENFP", "ISFJ"],
+            "Good": ["INFJ", "ENFJ"],
+            "Alright": [],
+            "Not Ideal": ["INTJ", "ENTJ", "INTP", "ENTP", "ISFP", "ESFP", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["ISTP", "ESTP", "ISTJ"]
+        },
+        "INTJ": {
+            "Ideal": ["ENFP", "INFJ"],
+            "Good": ["ENTJ"],
+            "Alright": ["INTJ"],
+            "Not Ideal": ["INFP", "INTP", "ENTP", "ISFP", "ISTP", "ISFJ", "ISTJ"],
+            "Uh-Oh, Think This One Through": ["ENTJ", "ESFP", "ESTP", "ESFJ", "ESTJ"]
+        },
+        "ENTJ": {
+            "Ideal": ["ENTP", "ISTJ"],
+            "Good": ["INTJ"],
+            "Alright": ["INTP"],
+            "Not Ideal": ["ENFP", "INFJ", "ENFJ", "ISFP", "ESFP", "ISTP", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INFP"]
+        },
+        "INTP": {
+            "Ideal": ["INTP", "ISTP"],
+            "Good": ["ENTP"],
+            "Alright": ["ENTJ"],
+            "Not Ideal": ["INFP", "ENFP", "INFJ", "ENFJ", "ISFP", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["ESFP", "ESTP", "ISTJ"]
+        },
+        "ENTP": {
+            "Ideal": ["ENTP"],
+            "Good": ["INFP", "INFJ", "INTJ"],
+            "Alright": ["ENFJ", "ENTJ"],
+            "Not Ideal": ["ENFP", "INTP", "ISFP", "ESFP", "ISTP", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["ISTJ"]
+        },
+        "ISFP": {
+            "Ideal": ["INFP", "ISFP"],
+            "Good": ["ISTP"],
+            "Alright": ["ESFP"],
+            "Not Ideal": ["ENFP", "INFJ", "ENFJ", "INTJ", "ENTJ", "INTP", "ENTP", "ISFJ", "ESFJ"],
+            "Uh-Oh, Think This One Through": ["ESTP", "ISTJ", "ESTJ"]
+        },
+        "ESFP": {
+            "Ideal": ["ENFP", "ESFP", "ESFJ"],
+            "Good": ["INFP", "ISFP", "ISTJ"],
+            "Alright": ["ISTP"],
+            "Not Ideal": ["ENFJ", "INTJ", "ENTJ", "ENTP", "ISFJ", "ESTP", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INTP", "INFJ", "INTP"]
+        },
+        "ISTP": {
+            "Ideal": ["INTP", "ISTP"],
+            "Good": ["ISFP"],
+            "Alright": ["INTJ", "ENTP"],
+            "Not Ideal": ["INFP", "INFJ", "ENFJ", "ENTJ", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["ENFP", "ESFP", "ISTJ"]
+        },
+        "ESTP": {
+            "Ideal": ["ENTJ", "ESTP"],
+            "Good": [],
+            "Alright": ["ENTP"],
+            "Not Ideal": ["ENFP", "INFJ", "ENFJ", "INTJ", "INTP", "ISFP", "ESFP", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INFP", "ISTJ"]
+        },
+        "ISFJ": {
+            "Ideal": ["ISFJ", "ISTJ"],
+            "Good": ["ENFJ", "ESFJ"],
+            "Alright": ["ESFP"],
+            "Not Ideal": ["INFP", "ENFP", "INFJ", "ENFJ", "INTJ", "ENTJ", "INTP", "ENTP", "ISTP", "ESTP"],
+            "Uh-Oh, Think This One Through": ["ESTJ"]
+        },
+        "ESFJ": {
+            "Ideal": ["ENFP", "ISFJ", "ESFJ"],
+            "Good": ["ISFP"],
+            "Alright": ["ENTJ"],
+            "Not Ideal": ["INFJ", "ENFJ", "INTJ", "INTP", "ENTP", "ESFP", "ISTJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INFP", "ISTP"]
+        },
+        "ISTJ": {
+            "Ideal": ["ENTJ", "ISTP", "ISFJ", "ISTJ"],
+            "Good": [],
+            "Alright": ["ENTJ"],
+            "Not Ideal": ["INTJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INFP", "ENFP", "INFJ", "ENFJ", "INTP", "ENTP", "ISFP", "ESTP"]
+        },
+        "ESTJ": {
+            "Ideal": ["ENTP"],
+            "Good": [],
+            "Alright": ["ENTJ", "ISTP"],
+            "Not Ideal": ["ENFP", "INTP", "ENFJ", "INTJ", "ESFP", "ISFJ", "ESFJ", "ESTJ"],
+            "Uh-Oh, Think This One Through": ["INFP", "INFJ", "ISFP", "ISTJ"]
+        }
+    }
+}

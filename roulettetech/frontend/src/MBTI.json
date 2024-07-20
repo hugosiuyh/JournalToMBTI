@@ -1,0 +1,84 @@
+{
+    "MBTI": {
+        "INFP": {
+            "name": "The Mediator",
+            "description": "Idealistic, empathetic, and introspective. INFPs are driven by their values and seek meaning and harmony in their lives. They are creative and often express themselves through art and writing.",
+            "photo": "infp.jpg"
+        },
+        "ENFP": {
+            "name": "The Campaigner",
+            "description": "Enthusiastic, imaginative, and charismatic. ENFPs are curious about the world and enjoy exploring new ideas and possibilities. They are good at connecting with others and inspiring them with their vision.",
+            "photo": "enfp.jpg"
+        },
+        "INFJ": {
+            "name": "The Advocate",
+            "description": "Insightful, principled, and altruistic. INFJs are deeply concerned about the well-being of others and often take on a guiding role. They are creative problem-solvers who strive to make the world a better place.",
+            "photo": "infj.jpg"
+        },
+        "ENFJ": {
+            "name": "The Protagonist",
+            "description": "Charismatic, empathetic, and persuasive. ENFJs are natural leaders who are skilled at motivating and guiding others. They are driven by a strong sense of duty and a desire to help others reach their potential.",
+            "photo": "enfj.jpg"
+        },
+        "INTJ": {
+            "name": "The Architect",
+            "description": "Strategic, logical, and independent. INTJs are analytical thinkers who excel at long-term planning and problem-solving. They are driven by a desire to understand complex systems and improve them.",
+            "photo": "intj.jpg"
+        },
+        "ENTJ": {
+            "name": "The Commander",
+            "description": "Assertive, confident, and efficient. ENTJs are natural leaders who are skilled at organizing and directing people and resources. They are goal-oriented and thrive in challenging environments.",
+            "photo": "entj.jpg"
+        },
+        "INTP": {
+            "name": "The Thinker",
+            "description": "Analytical, intellectual, and innovative. INTPs are curious and love to explore theories and ideas. They are independent thinkers who enjoy solving complex problems and understanding how things work.",
+            "photo": "intp.jpg"
+        },
+        "ENTP": {
+            "name": "The Debater",
+            "description": "Energetic, inventive, and argumentative. ENTPs are quick-witted and enjoy engaging in intellectual debates. They are always looking for new challenges and are not afraid to push boundaries and explore unconventional ideas.",
+            "photo": "entp.jpg"
+        },
+        "ISFP": {
+            "name": "The Adventurer",
+            "description": "Artistic, spontaneous, and sensitive. ISFPs are in tune with their surroundings and enjoy experiencing life in a tactile, immediate way. They are compassionate and have a strong sense of aesthetics.",
+            "photo": "isfp.jpg"
+        },
+        "ESFP": {
+            "name": "The Entertainer",
+            "description": "Outgoing, energetic, and playful. ESFPs love being the center of attention and enjoy engaging with others in a lively, dynamic manner. They are spontaneous and thrive on excitement and new experiences.",
+            "photo": "esfp.jpg"
+        },
+        "ISTP": {
+            "name": "The Virtuoso",
+            "description": "Practical, observant, and adaptable. ISTPs are hands-on problem solvers who enjoy working with tools and exploring how things work. They are independent and enjoy taking things apart and putting them back together.",
+            "photo": "istp.jpg"
+        },
+        "ESTP": {
+            "name": "The Entrepreneur",
+            "description": "Bold, perceptive, and action-oriented. ESTPs are energetic and enjoy taking risks and seizing opportunities. They are quick to make decisions and are skilled at navigating fast-paced environments.",
+            "photo": "estp.jpg"
+        },
+        "ISFJ": {
+            "name": "The Defender",
+            "description": "Loyal, practical, and compassionate. ISFJs are dedicated to helping others and excel at creating and maintaining order. They are reliable and often put the needs of others before their own.",
+            "photo": "isfj.jpg"
+        },
+        "ESFJ": {
+            "name": "The Consul",
+            "description": "Warm, sociable, and organized. ESFJs are natural caregivers who enjoy supporting and nurturing others. They are detail-oriented and excel at managing social events and ensuring everyone feels included.",
+            "photo": "esfj.jpg"
+        },
+        "ISTJ": {
+            "name": "The Logistician",
+            "description": "Responsible, meticulous, and dependable. ISTJs are practical and value tradition and order. They are thorough and methodical, excelling in roles that require attention to detail and reliability.",
+            "photo": "istj.jpg"
+        },
+        "ESTJ": {
+            "name": "The Executive",
+            "description": "Organized, direct, and confident. ESTJs are natural leaders who value structure and efficiency. They are decisive and excel at implementing plans and managing teams to achieve goals.",
+            "photo": "estj.jpg"
+        }
+    }
+}
