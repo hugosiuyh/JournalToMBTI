@@ -1,7 +1,3 @@
-Here is the updated README including the new sections:
-
----
-
 # MBTI Personality Analysis and Friend Suggestion
 
 ## Description
