@@ -11,6 +11,7 @@ This project analyzes MBTI personalities based on journal entries and suggests p
 
 ## Online Demo
 - [Watch Demo](https://www.loom.com/share/660554afeb4f444fba808a6c0e16162c?sid=c0f6c8fd-4870-4909-91ef-03f3018124fa)
+<img width="569" alt="Screenshot 2024-08-05 at 17 33 19" src="https://github.com/user-attachments/assets/2635bd91-1bfd-4832-b884-2d44e8d25184">
 
 ## Website
 - [Visit Website](http://333295207857-my-bucket.s3-website-us-west-1.amazonaws.com/)
